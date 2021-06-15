@@ -1,0 +1,12 @@
+/.vs
+/Library
+/Logs
+/obj
+/Temp
+/TsProj/node_modules
+/*.csproj
+/*.sln
+/*.user
+/Assets/Script/App/Runtime/Gen.meta
+/Assets/Script/App/Runtime/Gen
+

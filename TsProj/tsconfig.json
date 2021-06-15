@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"noImplicitAny": true,
+		"experimentalDecorators": true,
+		"declaration": false,
+		"module": "es2015",
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"target": "es5",
+		"moduleResolution": "node",
+		"lib": ["es2015", "dom"],
+		"allowJs": false,
+		"esModuleInterop": true
+	},
+	"include": [
+		"src",
+		"typings",
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

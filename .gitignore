@@ -7,6 +7,6 @@
 /*.csproj
 /*.sln
 /*.user
-/Assets/Script/App/Runtime/Gen.meta
-/Assets/Script/App/Runtime/Gen
-
+!/Assets/Script/App/Runtime/Gen
+/Assets/Script/App/Runtime/Gen/*
+!/Assets/Script/App/Runtime/Gen/AutoStaticUsing.cs

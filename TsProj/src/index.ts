@@ -4,30 +4,40 @@ import { component, property } from "./component/component-decoration";
 export * from "./component/component-info-mgr";
 export * from "./component/component-inst-mgr";
 
+/**
+ * 使用component修饰器定义TestBehaviour为Js组件
+ */
 @component()
 class TestBehaviour extends Component {
+    /**
+     * 使用property修饰器定义需要在Inspector上显示的属性及其类型
+     */
     @property(UnityEngine.GameObject)
     prop1: UnityEngine.GameObject;
 
+    /**
+     * editable未实现，仅演示功能扩展模式
+     */
     @property({
         type: System.Single,
         editable: true
     })
-    prop2: System.Single;
+    prop2: number;
 
+    /**
+     * 数组的几种定义形式
+     */
     @property({
         type: UnityEngine.GameObject,
         isArray: true
     })
     prop3: UnityEngine.GameObject[];
-
     @property([UnityEngine.Vector3])
     prop4: UnityEngine.Vector3[];
-
     @property({
         type: [System.UInt32]
     })
-    prop5: System.UInt32[];
+    prop5: number[];
 
     @property(UnityEngine.Camera)
     prop6: UnityEngine.Camera;

@@ -227,7 +227,7 @@ MonoBehaviour:
       keys:
       - prop2
       values:
-      - 8
+      - 1.23
     doubleProperties:
       keys: []
       values: []

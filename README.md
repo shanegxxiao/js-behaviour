@@ -4,7 +4,7 @@
 主要是想通过JsBehaviour实现对GameObject和组件的引用以及提供可编辑的参数，实现资源和代码更好的解耦。  
 * 使用方式如下  
 1. 在Ts中如下定义Js组件：
-```
+```js
 /**
  * 使用component修饰器定义TestBehaviour为Js组件
  */
@@ -45,4 +45,4 @@ class TestBehaviour extends Component {
 ![JsBehaviour的Inspector截图](JsBehaviour.png)
 
 
-* 该JsBehaviour实现未完整实现所有可能的属性展示需求，实际使用需要根据需求扩展。
+* 该JsBehaviour实现未做完整测试，也未完整实现所有可能的属性展示需求，仅提供一种实现思路，实际使用需要根据需求扩展维护，欢迎ISSUES和PR。

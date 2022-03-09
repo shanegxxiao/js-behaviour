@@ -280,6 +280,50 @@
     var InvalidComponentID = -1;
     var compInstMgr = new ComponentInstMgr;
 
+    /** @class */ ((function (_super) {
+        __extends(UserBehaviour1, _super);
+        function UserBehaviour1() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        UserBehaviour1 = __decorate([
+            component("User")
+        ], UserBehaviour1);
+        return UserBehaviour1;
+    })(Component));
+
+    /** @class */ ((function (_super) {
+        __extends(UserBehaviour2, _super);
+        function UserBehaviour2() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        UserBehaviour2 = __decorate([
+            component("User")
+        ], UserBehaviour2);
+        return UserBehaviour2;
+    })(Component));
+
+    /** @class */ ((function (_super) {
+        __extends(SystemBehaviour1, _super);
+        function SystemBehaviour1() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        SystemBehaviour1 = __decorate([
+            component("System")
+        ], SystemBehaviour1);
+        return SystemBehaviour1;
+    })(Component));
+
+    /** @class */ ((function (_super) {
+        __extends(SystemBehaviour2, _super);
+        function SystemBehaviour2() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        SystemBehaviour2 = __decorate([
+            component("System")
+        ], SystemBehaviour2);
+        return SystemBehaviour2;
+    })(Component));
+
     /**
      * 使用component修饰器定义TestBehaviour为Js组件
      */
@@ -294,7 +338,7 @@
             console.log("prop2 = " + this.prop2);
             console.log("prop3 = " + this.prop3);
             console.log("prop4 = " + this.prop4.length);
-            console.log("prop5 = " + this.prop5);
+            //console.log(`prop5 = ${this.prop5}`);
             console.log("prop6 = " + this.prop6);
             console.log("prop7 = {" + this.prop7.x + ", " + this.prop7.y + ", " + this.prop7.z + "}");
         };
@@ -329,11 +373,6 @@
             property([csharp.UnityEngine.Vector3])
         ], TestBehaviour.prototype, "prop4", void 0);
         __decorate([
-            property({
-                type: [csharp.System.UInt32]
-            })
-        ], TestBehaviour.prototype, "prop5", void 0);
-        __decorate([
             property(csharp.UnityEngine.Camera)
         ], TestBehaviour.prototype, "prop6", void 0);
         __decorate([
@@ -344,54 +383,6 @@
         ], TestBehaviour);
         return TestBehaviour;
     })(Component));
-    /** @class */ ((function () {
-        function UserBehaviour1() {
-        }
-        UserBehaviour1 = __decorate([
-            component("User")
-        ], UserBehaviour1);
-        return UserBehaviour1;
-    })());
-    /** @class */ ((function () {
-        function UserBehaviour2() {
-        }
-        UserBehaviour2 = __decorate([
-            component("User")
-        ], UserBehaviour2);
-        return UserBehaviour2;
-    })());
-    /** @class */ ((function () {
-        function UserBehaviour3() {
-        }
-        UserBehaviour3 = __decorate([
-            component("User")
-        ], UserBehaviour3);
-        return UserBehaviour3;
-    })());
-    /** @class */ ((function () {
-        function SystemBehaviour1() {
-        }
-        SystemBehaviour1 = __decorate([
-            component("System")
-        ], SystemBehaviour1);
-        return SystemBehaviour1;
-    })());
-    /** @class */ ((function () {
-        function SystemBehaviour2() {
-        }
-        SystemBehaviour2 = __decorate([
-            component("System")
-        ], SystemBehaviour2);
-        return SystemBehaviour2;
-    })());
-    /** @class */ ((function () {
-        function SystemBehaviour3() {
-        }
-        SystemBehaviour3 = __decorate([
-            component("System")
-        ], SystemBehaviour3);
-        return SystemBehaviour3;
-    })());
 
     exports.InvalidComponentID = InvalidComponentID;
     exports.compInfoMgr = compInfoMgr;

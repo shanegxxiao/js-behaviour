@@ -3,6 +3,10 @@ import { Component } from "./component/component-base";
 import { component, property } from "./component/component-decoration";
 export * from "./component/component-info-mgr";
 export * from "./component/component-inst-mgr";
+export * from "./UserBehaviour1";
+export * from "./UserBehaviour2";
+export * from "./SystemBehaviour1";
+export * from "./SystemBehaviour2";
 
 /**
  * 使用component修饰器定义TestBehaviour为Js组件
@@ -71,24 +75,4 @@ class TestBehaviour extends Component {
     public OnDestroy() {
         console.log("OnDestroy");
     }
-}
-
-@component("User")
-class UserBehaviour1 {
-}
-@component("User")
-class UserBehaviour2 {
-}
-@component("User")
-class UserBehaviour3 {
-}
-
-@component("System")
-class SystemBehaviour1 {
-}
-@component("System")
-class SystemBehaviour2 {
-}
-@component("System")
-class SystemBehaviour3 {
 }

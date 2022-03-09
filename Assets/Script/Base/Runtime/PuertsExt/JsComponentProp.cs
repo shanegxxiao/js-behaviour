@@ -13,6 +13,9 @@ namespace Base.Runtime
 
         public Type GetType(string typeName)
         {
+            if (string.IsNullOrEmpty(typeName)) {
+                return null;
+            }
             var assemblies = AppDomain.CurrentDomain.GetAssemblies();
             foreach (var assembly in assemblies)
             {

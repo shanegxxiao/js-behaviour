@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Base.Runtime;
-using Newtonsoft.Json;
 using Puerts;
 using UnityEngine;
 
@@ -13,7 +12,6 @@ namespace Base.Editor
         {
             try
             {
-                jsEnv.Eval("editor = require('index');");
                 ParseJsBehaviourInfos();
             }
             catch (Exception e)
@@ -53,8 +51,7 @@ namespace Base.Editor
 
         private void ParseJsBehaviourInfos()
         {
-            var jsonString = jsEnv.Eval<string>("editor.compInfoMgr.getJsonString();");
-            componentInfos = JsonConvert.DeserializeObject<Dictionary<string, ComponentInfo>>(jsonString);
+            componentInfos = JsComponentInfoParser.GetAllComponentInfo();
         }
 
         private readonly JsEnv jsEnv = new JsEnv(new JsLoaderEditor());

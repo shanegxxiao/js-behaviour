@@ -8,7 +8,11 @@ namespace Base.Runtime
     {
         public string name;
         public string path;
+        public string category;
         public Dictionary<string, PropertyInfo> properties;
+#if UNITY_EDITOR
+        public string tsFilePath;
+#endif
     }
 
     [Serializable]

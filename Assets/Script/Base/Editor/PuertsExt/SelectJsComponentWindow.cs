@@ -22,14 +22,14 @@ namespace Base.Editor
 
             foreach (var componentInfo in componentInfos.Values)
             {
-                if (string.IsNullOrEmpty(componentInfo.path))
+                if (string.IsNullOrEmpty(componentInfo.category))
                 {
                     root.AddChild(new AdvancedDropdownItem(componentInfo.name));
                     continue;
                 }
 
                 var item = root;
-                var folders = componentInfo.path.Split('/');
+                var folders = componentInfo.category.Split('/');
                 foreach (var folder in folders)
                 {
                     item = GetChildDropdownItem(item, folder);

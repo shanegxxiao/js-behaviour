@@ -7,7 +7,6 @@ namespace Base.Runtime
     public class ComponentInfo
     {
         public string name;
-        public string path;
         public string category;
         public Dictionary<string, PropertyInfo> properties;
 #if UNITY_EDITOR
